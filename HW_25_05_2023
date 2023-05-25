@@ -1,0 +1,66 @@
+class Device:
+    type = "Електроприбор"
+
+    def __init__(self, model, name):
+        self.model = model
+        self.name = name
+
+    def show(self):
+        return self.type, self.model, self.name
+
+
+class CoffeMachine(Device):
+
+    def cup_of_coffe(self):
+        return(f"Кофемашина {self.name} {self.model} сделала кофе")
+
+
+class Blender(Device):
+
+    def whip(self):
+        return (f"Блендер {self.name} {self.model} взбил молоко")
+
+
+class MeatGrinder(Device):
+
+    def meat(self):
+        return (f"М'ясорубка {self.name} {self.model} перетерла м'ясо")
+
+
+dev_1 = CoffeMachine("Series 1200", "PHILIPS")
+print(dev_1.cup_of_coffe())
+print(dev_1.show())
+
+dev_2 = Blender("MSM2620B", "BOSCH")
+print("\n", dev_2.whip())
+print(dev_2.show())
+
+dev_3 = MeatGrinder("GFP-935S", "Grunhelm")
+print("\n", dev_3.meat())
+print(dev_3.show())
+
+#################################################################################################
+
+class Pasport:
+
+    def __init__(self, name, name_2, name_3, year, country, visa, numbers):
+        self.name = name
+        self.name_2 = name_2
+        self.name_3 = name_3
+        self.year = year
+        self.country = country
+        self.visa = visa
+        self.numbers = numbers
+
+    def show(self):
+        return (f"\nІм'я: {self.name}\nПрізвище: {self.name_2}\nПо-батькові: {self.name_3}\n"
+                f"Рік народження: {self.year}\nКраїна: {self.country}")
+
+class Pasport_country(Pasport):
+
+    def show_country(self):
+        return(f"\nІм'я: {self.name}\nПрізвище: {self.name_2}\nПо-батькові: {self.name_3}\n"
+               f"Рік народження: {self.year}\nКраїна: {self.country}\nВиза: {self.visa}\nНомер: {self.numbers}")
+
+person_1 = Pasport_country("Віталій","Наконечний","Романович","2003","Україна","C-02-25","№53222523")
+print(person_1.show_country())
