@@ -1,0 +1,31 @@
+class liniika:
+
+    def __init__(self, cm):
+        self.cm = cm
+
+    def __add__(self, cm_plus):
+        self.cm = self.cm + cm_plus
+        return self.cm
+
+    def __str__(self):
+        return f"Линейка на {self.cm}см"
+
+l_1 = liniika(20)
+print(l_1)
+
+l_1.__add__(5)
+print(l_1)
+
+#############################################################################################
+
+class auto:
+    color = "Green"
+
+    @classmethod
+    def set_red_default(cls):
+        cls.color = "Red"
+
+auto_1 = auto()
+print("\nИзначальный цвет -", auto_1.color)
+auto_1.set_red_default()
+print("Цвет после функции set_red_default -", auto_1.color)
