@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+</head>
+<body>
+
+<script>
+let a = Number(prompt("Введіть номер дня тижня:" ))
+
+if (a == 1){
+	alert("Понеділок")
+}
+else if (a == 2){
+	alert("Вівторок")
+}
+else if (a == 3){
+	alert("Середа")
+}
+else if (a == 4){
+	alert("Четверг")
+}
+else if (a == 5){
+	alert("П'ятниця")
+}
+else if (a == 6){
+	alert("Суботта")
+}
+else if (a == 7){
+	alert("Неділя")
+}
+else {
+	alert("Помилка, введіть число від 1 до 7")
+}
+
+//////////////////////////////////////////////////////////////////////////////////////
+
+let b = Number(prompt("Введіть номер місяця:" ))
+	if (b == 1){
+		alert("Январь")
+	}
+	else if (b == 2){
+		alert("Февраль")
+	}
+	else if (b == 3){
+		alert("Март")
+	}
+	else if (b == 4){
+			alert("Апрель")
+		}
+	else if (b == 5){
+			alert("Май")
+		}
+	else if (b == 6){
+			alert("Июнь")
+		}
+	else if (b == 7){
+			alert("Июль")
+		}
+	else if (b == 8){
+			alert("Август")
+		}
+	else if (b == 9){
+			alert("Сентябрь")
+		}
+	else if (b == 10){
+			alert("Октябрь")
+		}
+	else if (b == 11){
+			alert("Ноябрь")
+		}
+	else if (b == 12){
+			alert("Декабрь")
+		}
+
+////////////////////////////////////////////////////////////////////////////////////
+
+let c = Number(prompt("Введіть число:" ))
+	
+if (c > 0){
+	alert("Number is positive")
+}
+else if(c < 0){
+	alert("Number is negative")
+}
+else if(c == 0){
+	alert("Number = 0")
+}
+
+//////////////////////////////////////////////////////////////////////////////////////
+
+let a_1 = Number(prompt("Введіть перше число:" ))
+let a_2 = Number(prompt("Введіть друге число:" ))
+
+if (a_1 == a_2){
+	console.log("Числа рівні")
+}
+else if(a_1 > a_2){
+	console.log(a_2, a_1)
+}
+else if (a_1 < a_2){
+	console.log(a_1, a_2)
+}
+</script>
+
+
+</body>
+</html>
