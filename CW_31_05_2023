@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<script>
+
+let a = Number(prompt("Введіть довжину лінії:" ))
+let b = prompt("Введіть символ лінії:" )
+
+
+for(i = 0; i < a; i++){
+	console.log(b)
+}
+
+//////////////////////////////////////////////////////////////
+
+let c = Number(prompt("Введіть число:" ))
+
+while(c != 7 ){
+
+	if(c == 7){
+		alert("Good bye!");
+		break;
+	}
+	else if (c > 0 && c != 7){
+		alert("Number is positive");
+	}
+	else if(c < 0){
+		alert("Number is negative");
+	}
+	else if(c == 0){
+		alert("Number = 0");
+	}	
+
+	let c = Number(prompt("Введіть число:" ))
+
+}
+</script>
+</body>
+</html>
