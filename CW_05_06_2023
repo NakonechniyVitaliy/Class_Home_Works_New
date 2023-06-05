@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+</head>
+<body>
+
+
+	<button onclick="red_color()">Змінити колір на Червоний</button>
+	<button onclick="black_color()">Змінити колір на Чорний</button>
+	<button onclick="green_color()">Змінити колір на Зелений</button>
+ 
+
+
+<script type="text/javascript">
+
+function red_color(){
+	let new_body = document.body
+	new_body.style.background = "red";
+}
+
+function black_color(){
+	let new_body = document.body
+	new_body.style.background = "black";
+}
+
+function green_color(){
+	let new_body = document.body
+	new_body.style.background = "green";
+}
+
+</script>
+ 
+
+</body>
+</html>
